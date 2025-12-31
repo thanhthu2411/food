@@ -1,11 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <link href="css/base.css" rel="stylesheet" />
+    <script src="js/main.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <!-- left  -->
+      <section class="header-left">
+        <button class="menu-btn" aria-label="open menu">
+          <svg class="icon">
+            <use xlink:href="images/sprite.symbol.svg#menu"></use>
+          </svg>
+        </button>
+        <a href="index.html">YumYum</a>
+      </section>
+      <!-- mid  -->
+      <section class="header-mid">
+        <div class="address-container">
+          <p>Abby Lane Manor</p>
+          <button class="address-btn" aria-label="address button">
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="segment">
+          <button class="seg-btn active" data-value="delivery">Delivery</button>
+          <button class="seg-btn" data-value="pickup">Pickup</button>
+        </div>
+      </section>
+      <!-- right  -->
+      <section class="header-right">
+        <button>Open App</button>
+      </section>
+      <!-- bottom  -->
+      <section class="header-bottom">
+        <form class="search-form" method="get">
+          <button aria-label="search icon" class="search-btn">
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#search"></use>
+            </svg>
+          </button>
+          <input
+            class="search-input"
+            placeholder="Search YumYum"
+            type="text"
+            name="q"
+          />
+        </form>
+        <button aria-label="notification" class="noti-btn">
+          <svg class="icon">
+            <use xlink:href="images/sprite.symbol.svg#notification"></use>
+          </svg>
+        </button>
+        <button class="cart-btn">
+          <img class="icon" src="images/cart.png" alt="cart icon" />
+          <div class="cart-number">0</div>
+        </button>
+      </section>
+    </header>
+    <main>
+      <section class="sidebar-container">
+        <button class="close-btn">
+          <svg class="icon">
+            <use xlink:href="images/sprite.symbol.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#ranger-station"></use>
+            </svg>
+            <a href="index.html" class="item-text">Home</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#money-square"></use>
+            </svg>
+            <a href="#" class="item-text">Payment</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#datepicker"></use>
+            </svg>
+            <a class="item-text">Offers</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#webcam"></use>
+            </svg>
+            <a class="item-text">Pickup</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#bookmark"></use>
+            </svg>
+            <a class="item-text">Saved Stores</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#tooltip"></use>
+            </svg>
+            <a class="item-text">Help</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use
+                xlink:href="images/sprite.symbol.svg#alert-information"
+              ></use>
+            </svg>
+            <a class="item-text">Account</a>
+          </li>
+        </ul>
+        <ul class="info-links">
+          <li><a>About Us</a></li>
+          <li><a>Careers</a></li>
+          <li><a>Accessibility</a></li>
+          <li><a>Be a Partner</a></li>
+          <li><a>Get $5 in Credits</a></li>
+        </ul>
+      </section>
+      <!-- main part  -->
+      <section class="main-container">
+        <div class="intro-container">
+          <h1>What are you in the mood for?</h1>
+          <div class="icon-container">
+            <div class="icon-card">
+              <img src="images/pizza.png" />
+              <p>Pizza</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/location.png" />
+              <p>Pickup</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/pho.png" />
+              <p>Pho</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/baguette.png" />
+              <p>Bread</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/barbecue.png" />
+              <p>Barbecue</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/boba.png" />
+              <p>Boba</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/burger.png" />
+              <p>Burger</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/chicken-leg.png" />
+              <p>Chicken</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/hot-soup.png" />
+              <p>Soup</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/ice-cream.png" />
+              <p>Ice-cream</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/ramen.png" />
+              <p>Ramen</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/rice.png" />
+              <p>Rice</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/coke.png" />
+              <p>Coke</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/salad.png" />
+              <p>Salad</p>
+            </div>
+            <div class="icon-card">
+              <img src="images/strawberry-cake.png" />
+              <p>Cake</p>
+            </div>
+          </div>
+        </div>
+        <!-- deals  -->
+        <div class="deals-container">
+          <h1>Deals for you</h1>
+          <div class="carousel">
+            <button class="scroll-btn left">&lt;</button>
+
+            <div class="deal-container scroll-container">
+              <div class="deal-card">
+                <img class="deal-img" src="images/cafe-deal.jpg" />
+                <p>Buy 1, get 1 free</p>
+                <a>Starbucks</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/pasta-deal.jpg" />
+                <p>$10 off on $25+</p>
+                <a>Oliver Garden</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/pizza-deal.jpg" />
+                <p>$10 off on $25+</p>
+                <a>Pizza Hut</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/pizza2-deal.jpg" />
+                <p>20% off on $15+</p>
+                <a>Dominos</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/vn-deal.jpg" />
+                <p>10% off on $15+</p>
+                <a>Viet Flavor</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/cake-deal.jpg" />
+                <p>10% off on $15+</p>
+                <a>Scrumble</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/duck-deal.jpg" />
+                <p>$10 off on $30+</p>
+                <a>Panda Express</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/sushi-deal.jpg" />
+                <p>$10 off on $30+</p>
+                <a>Sushi Love</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/salad-deal.jpg" />
+                <p>Free item on $25+</p>
+                <a>Sushi Love</a>
+              </div>
+              <div class="deal-card">
+                <img class="deal-img" src="images/steak-deal.jpg" />
+                <p>Free item on $25+</p>
+                <a>Steak </a>
+              </div>
+            </div>
+
+            <button class="scroll-btn right">&gt;</button>
+          </div>
+        </div>
+        <!-- restaurants  -->
+        <div class="restaurants-container">
+          <h1>Most popular local restaurants</h1>
+          <div class="carousel">
+            <button class="scroll-btn left">&lt;</button>
+            <button class="scroll-btn right">&gt;</button>
+
+            <div class="rest-container scroll-container">
+              <!-- <div class="rest-card ">
+                <div class="rest-img-container img-scroll-container">
+                  <div class="rest-img fade">
+                    <img src="images/cafe-deal.jpg" />
+                  </div>
+                  <div class="rest-img fade">
+                    <img src="images/cake-deal.jpg" />
+                  </div>
+                  <div class="rest-img fade">
+                    <img src="images/salad-deal.jpg" />
+                  </div>
+
+                  <a class="prev">&#10094;</a>
+                  <a class="next">&#10095;</a>
+                </div>
+                <a class="rest-link">
+                  <h2>Hip Sip</h2>
+                  <p>4.5 (50+)</p><span class="dot"></span>
+                  <p>0.3mi</p> <span class="dot"></span>
+                  <p>23 min</p>
+                  <p class="delivery-fee">$1.49 delivery fee</p>
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- top popular restaurants  -->
+        <div class="favorite-container">
+          <h1>Top favorite restaurants</h1>
+          <div class="carousel">
+            <button class="scroll-btn left">&lt;</button>
+            <button class="scroll-btn right">&gt;</button>
+
+            <div class="favo-container scroll-container"></div>
+          </div>
+        </div>
+
+        <!-- near restaurants  -->
+        <div class="near-rest-container">
+          <h1>Local restaurants near you</h1>
+          <div class="carousel">
+            <button class="scroll-btn left">&lt;</button>
+            <button class="scroll-btn right">&gt;</button>
+
+            <div class="near-container scroll-container"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-link-container">
+        <section class="know-us-container">
+          <h1>Get to Know Us</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Investors</li>
+            <li>Company Blog</li>
+            <li>Engineering Blog</li>
+            <li>Merchant Blog</li>
+            <li>Gift Cards</li>
+            <li>Promotions</li>
+            <li>Yum Central</li>
+            <li>LinkedIn</li>
+            <li>Glassdoor</li>
+            <li>Accessibility</li>
+            <li>Newsroom</li>
+          </ul>
+        </section>
+        <section class="help-you-container">
+          <h1>Let Us Help You</h1>
+          <ul>
+            <li>Account Details</li>
+            <li>Order History</li>
+            <li>Help</li>
+          </ul>
+        </section>
+        <section class="business-container">
+          <h1>Doing Business</h1>
+          <ul>
+            <li>Become a Shipper</li>
+            <li>YumYum Merchant</li>
+            <li>Get Dashers for Deliveries</li>
+            <li>Get YumYum for Business</li>
+          </ul>
+        </section>
+      </div>
+      <div class="social-container">
+        <section class="media-container">
+          <ul class="social-links">
+            <li><a href="#">
+              <svg class="icon"><use xlink:href="images/sprite.symbol.svg#facebook"></use></svg>
+            </a></li>
+            <li><a>
+              <svg class="icon"><use xlink:href="images/sprite.symbol.svg#instagram-dark"></use></svg>
+            </a></li>
+            <li><a>
+              <svg class="icon"><use xlink:href="images/sprite.symbol.svg#twitter"></use></svg>
+            </a></li>
+          </ul>
+        </section>
+        <section class="copyright-container">
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy</li>
+            <li>Delivery Locations</li>
+            <li>Do Not Sell or Share My Personal Information</li>
+            <li>© 2025 YumYum</li>
+            <li>Photo Credits: </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <div class="message-container"></div>
+  </body>
 </html>

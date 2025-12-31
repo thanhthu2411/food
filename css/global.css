@@ -1,0 +1,55 @@
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+:root {
+  --green: #58a675;
+  --sidebar-width: 75px;
+  --sidebar-expanded-width: 200px;
+}
+
+/* message container  */
+
+.message-container {
+  padding: 20px;
+  position: fixed;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: #2b2b2b;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(100%) translateX(-50%) ;
+  transition: transform 0.5s ease-in-out;
+}
+
+.message-container.mes-shown {
+  transform: translateY(0) translateX(-50%) ;
+  bottom: 30px;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "dish_001",
+    "restaurantId": "rest_001",
+    "name": "Iced Matcha Latte",
+    "price": 4.99,
+    "image": "images/matcha.jpg",
+    "description": "Creamy iced matcha with oat milk",
+    "category": "Drinks",
+    "isPopular": true
+  },
+  {
+    "id": "dish_002",
+    "restaurantId": "rest_001",
+    "name": "Strawberry Cheesecake",
+    "price": 6.49,
+    "image": "images/cheesecake.jpg",
+    "description": "Classic cheesecake topped with fresh strawberries",
+    "category": "Desserts",
+    "isPopular": false
+  },
+  {
+    "id": "dish_003",
+    "restaurantId": "rest_002",
+    "name": "Double Cheeseburger",
+    "price": 8.99,
+    "image": "images/double-burger.jpg",
+    "description": "Two beef patties, cheddar cheese, special sauce",
+    "category": "Burgers",
+    "isPopular": true
+  }
+]
