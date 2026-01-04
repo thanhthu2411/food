@@ -201,7 +201,7 @@ header button {
 /* footer  */
 
 footer {
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #dddbdb;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -212,11 +212,21 @@ footer {
 
 footer ul {
   list-style: none;
+  padding-left: 0px;
+  margin-top: 0;
+}
+
+.know-us-container, .help-you-container,
+.business-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .know-us-container ul li,
 .help-you-container ul li,
-.business-container ul li {
+.business-container ul li,
+.media-container ul li,
+.copyright-container ul li {
   font-weight: lighter;
   color: gray;
   margin: 0.7rem 0;
@@ -224,10 +234,42 @@ footer ul {
 
 .know-us-container ul li:hover,
 .help-you-container ul li:hover,
-.business-container ul li:hover {
+.business-container ul li:hover,
+.media-container ul li:hover,
+.copyright-container ul li:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
+.copyright-container ul li,
+.media-container ul li {
+  font-size: 0.9rem;
+  margin: 0.5rem 1rem;
+}
+
+.media-container ul, .copyright-container ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media (min-width: 1050px) {
+  .footer-link-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* gap: 3rem; */
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1093px) {
+  .footer-link-container {
+    justify-content: space-evenly;
+  }
+}
 
 
 
