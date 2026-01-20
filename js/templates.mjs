@@ -15,7 +15,7 @@ export function restTemplate(rest) {
                   <a class="next">&#10095;</a>
                 </div>
                 <div class="rest-link">
-                  <a href="rest.html/id=${rest.id}">
+                  <a class="r-link" href="rest.html/id=${rest.id}">
                     <h2>${rest.name}</h2>
                     <p>${rest.rating.score} (${rest.rating.count}+)</p><span class="dot"></span>
                     <p>${rest.distanceMiles}</p> <span class="dot"></span>

@@ -1,0 +1,60 @@
+
+.rest-hero-container {
+    position: relative;
+}
+
+.rest-hero-container img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.rest-hero-container .heart-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 40px;
+}
+
+/* intro part  */
+
+.rest-intro-left h1 {
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+}
+
+.rest-intro-left > p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.rest-time-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rest-time-container .icon {
+    width: 20px;
+}
+
+.rest-time-container div p {
+    display: inline-block;
+}
+.rest-time-container div p:first-child {
+    color: rgb(219, 165, 19);
+}
+
+/* intro button  */
+.intro-btn-container {
+    display: flex;
+    flex-direction: row;
+}

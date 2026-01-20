@@ -66,3 +66,44 @@ export function HeartBtnHandle() {
     });
   });
 }
+
+// scroll buttons
+export function ScrollBtnHandle() {
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".scroll-btn");
+    if (!btn) return;
+
+    const carousel = btn.closest(".carousel");
+    const container = carousel.querySelector(".scroll-container");
+
+    const amount = container.clientWidth * 0.8;
+    // container.clientWidth = the visible width of the scroll container
+
+    container.scrollBy({
+      left: btn.classList.contains("left") ? -amount : amount,
+      behavior: "smooth",
+    });
+  });
+}
+
+// handling slideshow buttons
+export function SlideBtnHandle() {
+  document.querySelectorAll(".rest-img-container").forEach((container) => {
+    let slides = container.querySelectorAll(".rest-img");
+    let index = 0;
+
+    slides[index].classList.add("active");
+
+    container.querySelector(".next").addEventListener("click", () => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    });
+
+    container.querySelector(".prev").addEventListener("click", () => {
+      slides[index].classList.remove("active");
+      index = (index - 1 + slides.length) % slides.length;
+      slides[index].classList.add("active");
+    });
+  });
+}

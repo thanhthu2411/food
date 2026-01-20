@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <link href="css/base.css" rel="stylesheet" />
+    <script src="js/base.js" type="module"></script>
+    <script src="js/rest.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <!-- left  -->
+      <section class="header-left">
+        <button class="menu-btn" aria-label="open menu">
+          <svg class="icon">
+            <use xlink:href="images/sprite.symbol.svg#menu"></use>
+          </svg>
+        </button>
+        <a href="index.html">YumYum</a>
+      </section>
+      <!-- mid  -->
+      <section class="header-mid">
+        <div class="address-container">
+          <p>Abby Lane Manor</p>
+          <button class="address-btn" aria-label="address button">
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="segment">
+          <button class="seg-btn active" data-value="delivery">Delivery</button>
+          <button class="seg-btn" data-value="pickup">Pickup</button>
+        </div>
+      </section>
+      <!-- right  -->
+      <section class="header-right">
+        <button>Open App</button>
+      </section>
+      <!-- bottom  -->
+      <section class="header-bottom">
+        <form class="search-form" method="get">
+          <button aria-label="search icon" class="search-btn">
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#search"></use>
+            </svg>
+          </button>
+          <input
+            class="search-input"
+            placeholder="Search YumYum"
+            type="text"
+            name="q"
+          />
+        </form>
+        <button aria-label="notification" class="noti-btn">
+          <svg class="icon">
+            <use xlink:href="images/sprite.symbol.svg#notification"></use>
+          </svg>
+        </button>
+        <button class="cart-btn">
+          <img class="icon" src="images/cart.png" alt="cart icon" />
+          <div class="cart-number">0</div>
+        </button>
+      </section>
+    </header>
+    <main>
+      <section class="sidebar-container">
+        <button class="close-btn">
+          <svg class="icon">
+            <use xlink:href="images/sprite.symbol.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#ranger-station"></use>
+            </svg>
+            <a href="index.html" class="item-text">Home</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#money-square"></use>
+            </svg>
+            <a href="#" class="item-text">Payment</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#datepicker"></use>
+            </svg>
+            <a class="item-text">Offers</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#webcam"></use>
+            </svg>
+            <a class="item-text">Pickup</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#bookmark"></use>
+            </svg>
+            <a class="item-text">Saved Stores</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#tooltip"></use>
+            </svg>
+            <a class="item-text">Help</a>
+          </li>
+          <li>
+            <svg class="icon">
+              <use
+                xlink:href="images/sprite.symbol.svg#alert-information"
+              ></use>
+            </svg>
+            <a class="item-text">Account</a>
+          </li>
+        </ul>
+        <ul class="info-links">
+          <li><a>About Us</a></li>
+          <li><a>Careers</a></li>
+          <li><a>Accessibility</a></li>
+          <li><a>Be a Partner</a></li>
+          <li><a>Get $5 in Credits</a></li>
+        </ul>
+      </section>
+
+      <!-- MAIN PART  -->
+      <section class="main-container">
+        <!-- hero part  -->
+        <div class="rest-hero-container">
+          <img src="images/burger-kingdom1.jpg" alt="hero image" />
+          <button class="heart-btn">
+            <svg class="heart" viewBox="0 0 24 24" width="24" height="24">
+              <path
+                d="M12 21s-6.7-4.35-9.33-7.35C-1.33 9.65 1.34 3 6.67 3c2.35 0 4.33 1.5 5.33 3 1-1.5 2.98-3 5.33-3 5.33 0 8 6.65 4 10.65C18.7 16.65 12 21 12 21z"
+              /></svg>Save
+          </button>
+        </div>
+        <!-- intro part  -->
+        <div class="rest-intro-container">
+          <div class="rest-intro-left">
+            <h1>Wendy's</h1>
+            <p>4.4 (4k+)</p>
+            <span class="dot"></span>
+            <p>Burger Joint 1.2 mi</p>
+            <span class="dot"></span>
+            <p>$$</p>
+            <div class="rest-time-container">
+            <svg class="icon">
+              <use xlink:href="images/sprite.symbol.svg#clock"></use>
+            </svg>
+            <div>
+              <p>Closing soon</p>
+              <span class="dot"></span>
+              <p>at 9:30PM</p>
+            </div>
+          </div>
+          </div>
+          <div class="rest-intro-right">
+            <div class="intro-btn-container">
+            <div class="rest-segment">
+              <button class="seg-btn active" data-value="delivery">
+                Delivery
+              </button>
+              <button class="seg-btn" data-value="pickup">Pickup</button>
+            </div>
+            <button class="group-order-btn">Group Order</button>
+          </div>
+          <div class="delivery-info-container">
+            <div class="delivery-fee-container">
+              <p>$0 delivery fee</p>
+              <p>
+                pricing & fees
+                <svg class="icon">
+                  <use xlink:href="images/sprite.symbol.svg#info"></use>
+                </svg>
+              </p>
+            </div>
+            <div class="delivery-time-container">
+              <p>22 min</p>
+              <p>delivery time</p>
+              <button aria-label="expand button">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.symbol.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-link-container">
+        <section class="know-us-container">
+          <h1>Get to Know Us</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Investors</li>
+            <li>Company Blog</li>
+            <li>Engineering Blog</li>
+            <li>Merchant Blog</li>
+            <li>Gift Cards</li>
+            <li>Promotions</li>
+            <li>Yum Central</li>
+            <li>LinkedIn</li>
+            <li>Glassdoor</li>
+            <li>Accessibility</li>
+            <li>Newsroom</li>
+          </ul>
+        </section>
+        <section class="help-you-container">
+          <h1>Let Us Help You</h1>
+          <ul>
+            <li>Account Details</li>
+            <li>Order History</li>
+            <li>Help</li>
+          </ul>
+        </section>
+        <section class="business-container">
+          <h1>Doing Business</h1>
+          <ul>
+            <li>Become a Shipper</li>
+            <li>YumYum Merchant</li>
+            <li>Get Dashers for Deliveries</li>
+            <li>Get YumYum for Business</li>
+          </ul>
+        </section>
+      </div>
+      <div class="social-container">
+        <section class="media-container">
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.symbol.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg class="icon">
+                  <use
+                    xlink:href="images/sprite.symbol.svg#instagram-dark"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg class="icon">
+                  <use xlink:href="images/sprite.symbol.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="copyright-container">
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy</li>
+            <li>Delivery Locations</li>
+            <li>Do Not Sell or Share My Personal Information</li>
+            <li>© 2025 YumYum</li>
+            <li>Photo Credits:</li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <div class="message-container"></div>
+  </body>
+</html>
